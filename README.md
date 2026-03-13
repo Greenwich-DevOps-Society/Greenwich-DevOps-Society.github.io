@@ -34,7 +34,7 @@ If this repo already has that name, publishing is straightforward:
 
 Your site URL will be:
 
-`https://<org-name>.github.io`
+`https://Greenwich-DevOps-Society.github.io`
 
 ## Customize Quickly
 
