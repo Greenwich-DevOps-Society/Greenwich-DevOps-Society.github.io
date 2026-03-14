@@ -1,17 +1,23 @@
 :root {
-  --bg: #f2efe7;
-  --ink: #1f2a44;
-  --ink-muted: #4b5678;
-  --brand: #d85f3f;
-  --brand-dark: #9f3920;
-  --accent: #f2b950;
-  --panel: #fffdf8;
-  --line: rgba(31, 42, 68, 0.15);
-  --shadow: 0 14px 30px rgba(31, 42, 68, 0.12);
+  --bg: #f5f7ff;
+  --ink: #1a1d2e;
+  --ink-muted: #5a5f7a;
+  --brand: #5b5bd6;
+  --brand-dark: #4343b0;
+  --accent: #0ea5e9;
+  --panel: #ffffff;
+  --line: rgba(26, 29, 46, 0.09);
+  --shadow: 0 10px 28px rgba(91, 91, 214, 0.1);
 }
 
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
 }
 
 body {
@@ -20,9 +26,9 @@ body {
   color: var(--ink);
   font-family: "Space Grotesk", sans-serif;
   background:
-    radial-gradient(circle at 10% 10%, rgba(216, 95, 63, 0.23) 0, transparent 36%),
-    radial-gradient(circle at 88% 20%, rgba(242, 185, 80, 0.28) 0, transparent 30%),
-    linear-gradient(165deg, #f7f4ed 0%, #f0ece2 52%, #ece9df 100%);
+    radial-gradient(circle at 10% 8%, rgba(91, 91, 214, 0.12) 0, transparent 40%),
+    radial-gradient(circle at 88% 15%, rgba(14, 165, 233, 0.1) 0, transparent 34%),
+    linear-gradient(165deg, #f5f7ff 0%, #eef1ff 52%, #f0f4ff 100%);
 }
 
 .bg-grid {
@@ -154,8 +160,8 @@ h1 {
 
 .btn-secondary {
   color: var(--ink);
-  background: #fff;
-  border: 1px solid rgba(31, 42, 68, 0.25);
+  background: #ffffff;
+  border: 1px solid rgba(26, 29, 46, 0.18);
 }
 
 .cards {
@@ -165,9 +171,41 @@ h1 {
   gap: 1rem;
 }
 
+.focus {
+  margin-top: 1.8rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(91, 91, 214, 0.25);
+  background:
+    linear-gradient(130deg, rgba(91, 91, 214, 0.08) 0%, rgba(14, 165, 233, 0.07) 100%),
+    rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+}
+
+.focus-eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--brand);
+}
+
+.focus h2 {
+  margin-top: 0.35rem;
+  font-size: 2rem;
+}
+
+.focus p {
+  margin: 0.8rem 0 0;
+  color: var(--ink-muted);
+  max-width: 70ch;
+  line-height: 1.65;
+}
+
+
 .card {
-  background: color-mix(in srgb, var(--panel) 86%, #ffffff 14%);
-  border: 1px solid rgba(31, 42, 68, 0.14);
+  background: var(--panel);
+  border: 1px solid rgba(26, 29, 46, 0.09);
   border-radius: 1rem;
   padding: 1.2rem;
   box-shadow: var(--shadow);
@@ -195,9 +233,9 @@ h1 {
 .join {
   margin: 2.8rem 0 3rem;
   padding: 1.4rem 1.3rem;
-  border: 1px dashed rgba(31, 42, 68, 0.32);
+  border: 1px dashed rgba(91, 91, 214, 0.3);
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .join h2 {
@@ -215,7 +253,7 @@ h1 {
   align-items: center;
   gap: 1rem;
   padding: 1.2rem 0 2rem;
-  border-top: 1px solid rgba(31, 42, 68, 0.15);
+  border-top: 1px solid rgba(26, 29, 46, 0.1);
   color: var(--ink-muted);
   font-size: 0.95rem;
 }
